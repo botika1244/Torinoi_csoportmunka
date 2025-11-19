@@ -1,0 +1,2 @@
+# Torinoi_csoportmunka
+sigma
