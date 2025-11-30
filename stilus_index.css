@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+header{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(kepek/background1.png) center/cover no-repeat;
+    height: 800px;
+    text-align: center;
+    color: white;
+    align-content: center;
+    font-family: 'EB Garamond', Times, serif;
+}
+article{
+    margin: 30px;
+
+}
+.alcim{
+    height: 230px;
+    padding: 0px 60px;
+    background-color: rgba(215, 214, 214, 0.573);
+    margin-bottom: 30px;
+    line-height: 50px;
+    align-content: center;
+}
+.alcim a{
+    font-size: 40px;
+    color: rgb(66, 160, 237);
+}
+.kepes img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+.kepes{
+    width: 300px;
+    margin: 0px auto;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.imggrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.text{
+    padding: 0px 60px;
+    font-size: 40px;
+    text-align: left;
+    width: 85%;
+}
+.first_p{
+    margin-bottom: 30px;
+}
+.text h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(66, 160, 237);
+}
+.text div{
+    margin-top: 30px;
+}
