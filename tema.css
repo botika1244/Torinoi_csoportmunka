@@ -1,0 +1,30 @@
+.temagrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section{
+    margin: 0px auto;
+    align-content: center;
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+article{
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+}
+
+body{
+    font-family: 'EB Garamond', Times, serif;
+}
