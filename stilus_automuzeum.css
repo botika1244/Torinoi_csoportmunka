@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(kepek/torinokep.png) center/cover no-repeat;
+    height: 700px;
+    text-align: center;
+    color: white;
+    align-content: center;
+    font-family: 'EB Garamond', Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.cim{
+    padding:50px 0px 30px 30px;
+    font-size: 30px;
+}
+
+.alcim{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.alcim p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.alcim h2{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.kepszoveg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    margin: 125px;
+}
+
+
+.kepszoveg #elso{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
+}
+
+.kepszoveg #masodik{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.kepszoveg #masodik p{
+    padding-top: 10px;
+}
+
+.csoportkep {
+    margin: 50px;
+}
+
+/* --- Képváltó (Carousel) Stílusok --- */
+
+.carousel-container {
+    /* Megadja a karusszel látható méretét */
+    max-width: 800px; 
+    margin: 50px auto; /* Középre igazítás */
+    overflow: hidden; /* A kulcs! Elrejti azokat a slide-okat, amik túlógnak. */
+    position: relative; /* A gombok pozícionálásához */
+    border: 2px solid #7a7979; /* Tetszőleges keret */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+    /* Az összes slide konténere. Ez fog elcsúszni balra/jobbra. */
+    display: flex; /* A slide-ok egymás mellé kerülnek */
+    transition: transform 0.5s ease-in-out; /* Animáció a sima átmenethez */
+}
+
+.carousel-slide {
+    /* Egyetlen slide (kép és szöveg) */
+    min-width: 100%; /* Minden slide pontosan a konténer 100%-át foglalja el */
+    box-sizing: border-box; 
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 0; /* Megakadályozza, hogy a slide-ok zsugorodjanak */
+}
+
+.carousel-slide img {
+    /* Kép stílusa */
+    width: 100%;
+    height: auto;
+    max-height: 800px; /* Max magasság beállítása */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.carousel-slide p {
+    /* Szöveg stílusa */
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* --- Navigációs Gombok Stílusai --- */
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100; /* Gomb a kép előtt legyen */
+    font-size: 1.5em;
+    line-height: 1;
+    border-radius: 50%; /* Kör alakú gombok */
+    transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 1px;
+}
+
+.next-btn {
+    right: 1px;
+}
+
+.container{
+    background-color: rgb(47, 51, 68);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

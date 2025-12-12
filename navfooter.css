@@ -1,7 +1,8 @@
 nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-    grid-template-areas: "p . k r m";   
+    grid-template-areas: "p . k r m";
+    border-bottom: 2px solid black; 
 }
 
 nav a:last-child{
