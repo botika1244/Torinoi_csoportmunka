@@ -1,18 +1,55 @@
 .temagrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 400px);
     align-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: auto black;
 }
 
-.temak{
+#tema1, #tema2, #tema3, #tema4{
     margin: 0px auto;
     align-content: center;
     width: 400px;
     height: 300px;
-    background-color: gray;
     text-align: center;
+}
+
+#tema1, #tema2, #tema3, #tema4 a{
+    font-size: 30px;
+}
+
+#tema1 {
+    height: 300px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(kepek/tema_automuzeum.jpg);
+    background-size: cover;
+}
+
+#tema2 {
+    height: 300px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(kepek/donboscoszoba_tema.webp);
+    background-size: cover;
+}
+
+#tema3 {
+    height: 300px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(kepek/sdMadonnadLaghi_tema.jpg);
+    background-size: cover;
+}
+
+#tema4 {
+    height: 300px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(kepek/savioszentd_tema.jpg);
+    background-size: cover;
 }
 
 a{
@@ -21,7 +58,7 @@ a{
 }
 
 article{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
     text-align: center;
 }
 
@@ -32,4 +69,28 @@ body{
 
 header h1 {
     padding-left: 20px;
+}
+
+@media (max-width: 1024px) {
+    .temagrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 150px;
+        justify-content: center;
+    }
+
+    #tema1, #tema2, #tema3, #tema4 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .temagrid {
+        grid-template-columns: 1fr;
+        gap: 150px;
+        justify-content: center;
+    }
+
+    #tema1, #tema2, #tema3, #tema4 {
+        width: 90%;
+    }
 }

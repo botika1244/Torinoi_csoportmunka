@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(kepek/savioszentd_tema.jpg) center/cover no-repeat;
+    height: 700px;
+    text-align: center;
+    color: white;
+    align-content: center;
+    font-family: 'EB Garamond', Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.cim{
+    padding:50px 0px 30px 30px;
+    font-size: 30px;
+}
+
+.alcim{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.alcim p{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.alcim h2{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.kepszoveg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    margin: 125px;
+}
+
+
+.kepszoveg #elso{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
+}
+
+.kepszoveg #masodik{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.kepszoveg #masodik p{
+    padding-top: 10px;
+}
+
+.csoportkep {
+    margin: 50px;
+}
