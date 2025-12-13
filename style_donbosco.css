@@ -2,19 +2,16 @@
     box-sizing: border-box;
     margin: 0px;
 }
-section{
+.section{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .text{
     width: 600px;
     height: 400px;
-    background-color: rgb(240, 201, 8);
     margin: 25px auto;
     align-content: center;
     padding: 20px;
-    border: 3px solid black;
-    border-radius: 15px;
     font-family: "Segoe UI", system-ui, sans-serif;
 }
 .text h1{
@@ -32,8 +29,6 @@ section{
     height: 400px;
     background-color: aqua;
     margin: 25px auto;
-    border: 3px solid black;
-    border-radius: 15px;
     object-fit: cover;
 }
 img{
@@ -95,7 +90,7 @@ header a:hover{
     .text p{
         font-size: 18px;
     }
-    section{
+    .section{
         grid-template-columns: 1fr;
         .text{
             order: 1;
