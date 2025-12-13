@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
 }
 section{
     display: grid;
@@ -8,12 +9,13 @@ section{
 .text{
     width: 600px;
     height: 400px;
-    background-color: aqua;
-    margin: 0px auto;
+    background-color: rgb(240, 201, 8);
+    margin: 25px auto;
     align-content: center;
     padding: 20px;
     border: 3px solid black;
     border-radius: 15px;
+    font-family: "Segoe UI", system-ui, sans-serif;
 }
 .text h1{
     margin-bottom: 25px;
@@ -21,7 +23,7 @@ section{
     font-size: 35px;
 }
 .text p{
-    font-size: 25px;
+    font-size: 23px;
     text-align: left;
     margin-bottom: 15px;
 }
@@ -29,10 +31,89 @@ section{
     width: 600px;
     height: 400px;
     background-color: aqua;
-    margin: 0px auto;
+    margin: 25px auto;
     border: 3px solid black;
     border-radius: 15px;
+    object-fit: cover;
 }
 img{
     width: 100%;
+}
+header{
+    background-color: orange;
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+header h1{
+    text-indent: 1%;
+    font-size: 45px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: 0px 5px;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+header a:hover{
+    color: rgb(0, 255, 255);
+}
+@media screen and (max-width:1300px) {
+    .text , .imgbox{
+        width: 500px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .text , .imgbox{
+        width: 400px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 17px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:900px) {
+    .text , .imgbox{
+        width: 500px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    section{
+        grid-template-columns: 1fr;
+        .text{
+            order: 1;
+        }
+        .imgbox{
+            order: 2;
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    .text , .imgbox{
+        width: 400px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 18px;
+    }
+    .text p{
+        font-size: 16px;
+    }
 }
