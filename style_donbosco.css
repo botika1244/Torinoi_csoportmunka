@@ -93,12 +93,12 @@ header a:hover{
     }
     .section{
         grid-template-columns: 1fr;
-        .text{
-            order: 1;
-        }
-        .imgbox{
-            order: 2;
-        }
+    }
+    .section .text{
+        order: 1;
+    }
+    .section .imgbox{
+        order: 2;
     }
 }
 @media screen and (max-width:550px) {
