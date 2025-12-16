@@ -1,0 +1,222 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    grid-template-areas: "p . k r m";
+    border-bottom: 2px solid black;
+}
+
+
+nav a:last-child{
+    background-color: black;
+}
+
+
+nav a {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+}
+
+
+nav img{
+    max-height: 40px;
+}
+
+
+nav p {
+    grid-area: p;
+    margin:auto;
+}
+
+
+#kep {
+    grid-area: k;
+    max-height: 40px;
+    margin:auto;
+}
+
+
+#rolunk{
+    grid-area: r;
+    margin:auto;
+    text-decoration: none;
+    color: black
+}
+
+
+#megnezem{
+    grid-area: m;
+    margin:auto;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: white;
+}
+
+
+footer {
+    background-image: url(kepek/XJyoNq9\ -\ Imgur.png);
+    background-repeat: no-repeat;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    background-size: 100% auto;
+}
+
+
+footer p {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+
+footer h1 {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+
+footer .gomb {
+    margin-left: 80px;
+    background-color: white;
+    border: 20px solid white;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 160px;
+    margin-bottom: 250px;
+}
+
+
+footer .gomb a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#section img{
+    max-width: 40px;
+}
+
+
+#section {
+    padding-left: 50px;
+    background-color: rgb(43, 42, 42);
+    padding-bottom: 3vh;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text{
+    width: 600px;
+    height: 400px;
+    margin: 25px auto;
+    align-content: center;
+    padding: 20px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+.text h1{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+}
+.text p{
+    font-size: 23px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.imgbox{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(240, 245, 245);
+    margin: 25px auto;
+    object-fit: cover;
+}
+img{
+    width: 100%;
+}
+header{
+ 
+    height: 100px;
+    border-bottom: 2px solid black;
+    align-content: center;
+}
+header h1{
+    text-indent: 1%;
+    font-size: 45px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    margin: 0px 5px;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+header a:hover{
+    color: rgb(0, 255, 255);
+}
+@media screen and (max-width:1300px) {
+    .text , .imgbox{
+        width: 500px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .text , .imgbox{
+        width: 400px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 17px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:900px) {
+    .text , .imgbox{
+        width: 500px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 20px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .section{
+        grid-template-columns: 1fr;
+        .text{
+            order: 1;
+        }
+        .imgbox{
+            order: 2;
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    .text , .imgbox{
+        width: 400px;
+        height: 300px;
+    }
+    .text h1{
+        font-size: 18px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+}
