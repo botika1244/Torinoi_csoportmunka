@@ -1,0 +1,165 @@
+header{
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(kepek/rolunk\ hatterkep.jpg) center/cover no-repeat;
+    height: 800px;
+    text-align: center;
+    color: white;
+    align-content: center;
+    font-family: 'EB Garamond', Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.text_img_grid{
+    display:grid ;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    "sz p"
+    ". k";
+    margin: 80px;
+    gap: 30px
+    ;
+}
+.text_img_grid h2{
+    grid-area: sz;
+}
+.text_img_grid p{
+    grid-area: p;
+}
+.text_img_grid img{
+    grid-area: k;
+    margin-top: 30px;
+}
+
+:root{
+  --max: 900px;
+  --text: #1a1a1a;
+  --muted: #555;
+  --line: #e3e3e3;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.65;
+}
+
+article{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.osztaly_info{
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.osztaly_info h2{
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.osztaly_info img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.osztaly_info p{
+  font-size: 16px;
+  color: var(--muted);
+}
+
+
+article > h2:last-of-type{
+  margin-top: 40px;
+  font-size: 26px;
+  text-align: left;
+}
+
+
+@media (max-width: 768px){
+
+  header{
+    padding: 60px 16px;
+  }
+
+  header h1{
+    font-size: 26px;
+  }
+
+  .text_img_grid img{
+    height: 220px;
+  }
+
+  .osztaly_info img{
+    height: 240px;
+  }
+}
+
+.csapat{
+  margin-top: 18px;
+}
+
+.csapat-leiras{
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #444;
+  max-width: 720px;
+}
+
+.csapat-lista{
+  border-top: 1px solid #e3e3e3; 
+}
+
+.csapat-tag{
+  display: grid;
+  grid-template-columns: 1fr 120px; 
+  gap: 18px;
+  align-items: center;
+
+  padding: 18px 0;
+  border-bottom: 1px solid #e3e3e3; 
+}
+
+.csapat-bal h3{
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.csapat-bal p{
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.csapat-jobb img{
+  width: 300px;
+  height: 170px;
+
+}
+
+@media (max-width: 520px){
+  .csapat-tag{
+    grid-template-columns: 1fr;
+  }
+
+  .csapat-jobb img{
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
